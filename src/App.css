@@ -1,0 +1,271 @@
+/* Reset all styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #282c34;
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Container for center alignment */
+.container {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-size: cover;
+  transition: background-image 0.5s ease;
+}
+
+/* Title styles */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Search box styles */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Input field styles */
+input {
+  padding: 12px;
+  width: 100%;
+  max-width: 250px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  padding: 12px 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+}
+
+/* Button hover styles */
+button:hover {
+  background-color: #e68900;
+}
+
+/* Unit toggle button styles */
+.unit-toggle {
+  background-color: #3f51b5;
+}
+
+.unit-toggle:hover {
+  background-color: #303f9f;
+}
+
+/* Recent searches section */
+.recent-searches {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+}
+
+.recent-searches h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recent-searches ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-searches li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  color: #ff9800;
+}
+
+.recent-searches li:hover {
+  color: #e68900;
+}
+
+/* Weather information section */
+.weather-info {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.weather-info img {
+  width: 80px;
+  margin-top: 10px;
+}
+
+.temperature {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Forecast section */
+.forecast {
+  margin-top: 40px;
+}
+
+.forecast h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.forecast-item {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 80px;
+  margin: 0 auto;
+}
+
+.forecast-item img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+/* Error message styles */
+.error {
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* Footer styles */
+.footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Title font size for smaller screens */
+  .title {
+    font-size: 2rem;
+  }
+
+  /* Adjust search box and input field size */
+  .search-box {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .unit-toggle {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  /* Adjust weather info and forecast section for smaller screens */
+  .weather-info {
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .forecast {
+    margin-top: 30px;
+  }
+
+  .forecast-container {
+    justify-content: space-between;
+  }
+
+  .forecast-item {
+    width: 100px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Title font size for mobile screens */
+  .title {
+    font-size: 1.8rem;
+  }
+
+  /* Adjust button and input field width for mobile */
+  input {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Adjust weather info card and forecast item size */
+  .weather-info {
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .forecast-item {
+    width: 80px;
+  }
+
+  .footer {
+    font-size: 0.75rem;
+  }
+}
